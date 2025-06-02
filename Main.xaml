@@ -103,6 +103,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="813.2,1643.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -160,7 +161,7 @@
               </ui:CommentOut>
               <ui:TextToLeftRight TextToLeft="{x:Null}" DisplayName="Text to Left/Right" FullText="[outputText]" sap:VirtualizedContainerService.HintSize="484.8,306.4" sap2010:WorkflowViewState.IdRef="TextToLeftRight_1" Separator="Date:" SeparatorKey="Custom" TextToRight="[pdfDate]" />
               <ui:TextToLeftRight TextToRight="{x:Null}" DisplayName="Text to Left/Right" FullText="[pdfDate]" sap:VirtualizedContainerService.HintSize="484.8,306.4" sap2010:WorkflowViewState.IdRef="TextToLeftRight_2" Separator="Bill To:" SeparatorKey="Custom" TextToLeft="[pdfDate]" />
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484.8,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[pdfDate]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484.8,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;The Date is: &quot;+pdfDate]" />
             </Sequence>
           </ActivityAction>
         </ui:ForEachFileX.Body>
